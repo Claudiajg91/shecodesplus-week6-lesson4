@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Carbic's weather app</title>
+        <meta charset="UTF-8" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link href="src/styles.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://kit.fontawesome.com/7ecb936eb0.js"
+          crossorigin="anonymous"
+        ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-background">
+        <img src="images/logo.png" alt="Carbic logo" class="logo" />
+        <div class="row">
+          <div class="col-12">
+            <form class="d-flex" id="search-city-form">
+              <input
+                id="city-input"
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter your city"
+                aria-label="Search"
+                autocomplete="on"
+              />
+              <button
+                class="btn btn-outline-success search-btn"
+                id="search-button"
+                type="submit"
+              >
+                Search
+              </button>
+              <button type="button" class="btn btn-outline-primary current-btn" id="current-button"><i class="fas fa-map-marker-alt"></i> </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h2 class="city-name">HOUSTON, TX</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5">
+            <div id="current-date">Wednesday, 16 December 10:00 a.m.</div>
+            <div class="current-conditions-text">Current forecast</div>
+      
+            <i class="fas fa-sun curr-cond-icon float-right-icon"></i>
+            <div id="weather-description" class="cond">Sunny</div>
+            <div class="float-left" id="float-left-temp">
+              <span class="main-temperature" id="main-temperature">19</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="row">
+              <div class="col-6">
+                <span class="float-left">Feels like</span>
+                <span id="feels-like-value" class="float-right">18°C</span>
+              </div>
+              <div class="col-6">
+                <span class="float-left">Wind</span>
+                <span id="wind" class="float-right">9km/h E</span>
+              </div>
+              <div class="col-6">
+                <span class="float-left">Pressure</span>
+                <span id="pressure" class="float-right">10.76hPa</span>
+              </div>
+              <div class="col-6">
+                <span class="float-left">Humidity</span>
+                <span id="humidity" class="float-right">Low</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col days-forecast">
+                  <div class="temperature">20°С</div>
+                  <i class="fas fa-cloud-sun icon float"></i>
+                  <div class="weekdays">Thursday</div>
+                </div>
+                <div class="col days-forecast">
+                  <div class="temperature">17°C</div>
+                  <i class="fas fa-cloud-sun-rain icon float"></i>
+                  <div class="weekdays">Friday</div>
+                </div>
+                <div class="col days-forecast">
+                  <div class="temperature">14°C</div>
+                  <i class="fas fa-cloud-sun-rain icon float"></i>
+                  <div class="weekdays">Saturday</div>
+                </div>
+                <div class="col days-forecast">
+                  <div class="temperature">18°C</div>
+                  <i class="fas fa-cloud-sun icon float"></i>
+                  <div class="weekdays">Sunday</div>
+                </div>
+                <div class="col days-forecast">
+                  <div class="temperature">21°C</div>
+                  <i class="fas fa-sun icon float"></i>
+                  <div class="weekdays">Monday</div>
+                </div>
+                <div class="col days-forecast">
+                    <div class="temperature">19°C</div>
+                    <i class="fas fa-sun icon float"></i>
+                    <div class="weekdays">Tuesday</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="src/index.js"></script>
+    <footer>
+      <p>© Carbic</p>
+    </footer>
+  </body>
+</html>

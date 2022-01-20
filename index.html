@@ -3,6 +3,12 @@
     <head>
         <title>The Carbic's weather app</title>
         <meta charset="UTF-8" />
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <link href="src/styles.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
-        />
+
         <script
           src="https://kit.fontawesome.com/7ecb936eb0.js"
           crossorigin="anonymous"
@@ -27,8 +28,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="main-background">
-        <img src="images/logo.png" alt="Carbic logo" class="logo" />
+        <div class="main-background">
+            <img src="images/logo.png" alt="Carbic logo" class="logo" />
         <div class="row">
           <div class="col-12">
             <form class="d-flex" id="search-city-form">
@@ -133,9 +134,12 @@
             </div>
           </div>
         </div>
+    <div class="footer">
+        ©Carbic
+        <a href="https://github.com/Claudiajg91/shecodesplus-week6-lesson4.git"> Open-source code</a>
+        by
+        <a href="https://www.linkedin.com/in/claudia-ju%C3%A1rez-77760a109/">Claudia Juárez</a>
+    </div>
     <script src="src/index.js"></script>
-    <footer>
-      <p>© Carbic</p>
-    </footer>
   </body>
 </html>
